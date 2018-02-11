@@ -138,7 +138,7 @@ int getValidMove(Board* grid, int position, char move) {
             return -1;
         }
     } else if (move == 's') {
-        if (position + side > side * side) {
+        if (position + side >= side * side) {
             // out of bounds; call getValidMove() again
             return side + 2;
         } else {
