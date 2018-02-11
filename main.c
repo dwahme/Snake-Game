@@ -182,14 +182,14 @@ int collisionDetect(Board* grid) {
 
 int main() {
   srand(time(NULL));
-  Board* test = createBoard(20);
+  Board* board = createBoard(20);
 
   do {
-      printBoard(test);
-      movePlayer(test);
-      moveSnake(test);
-  } while (collisionDetect(test) == 0);
+      printBoard(board);
+      movePlayer(board);
+      moveSnake(board);
+  } while (collisionDetect(board) == 0);
 
-  freeBoard(test);
+  freeBoard(board);
   return 0;
 }
