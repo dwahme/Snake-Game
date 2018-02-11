@@ -199,7 +199,7 @@ int collisionDetect(Board* grid) {
         // Collide with snake, lose the game
         printf("\n-----YOU LOSE-----\n\n");
         return 1;
-    } else if (grid -> playerPos == grid -> goalPos)
+    } else if (grid -> playerPos == grid -> goalPos) {
         // Collide with the goal, win the game
         printf("\n+++++YOU WIN+++++\n\n");
         return 1;
